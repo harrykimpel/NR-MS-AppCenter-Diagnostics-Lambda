@@ -2,6 +2,12 @@
 
 This AWS Lambda function collects diagnostics information from Microsoft App Center platform and sends them via custom events to New Relic Insights.
 
+## index.js
+This file contains the AWS Lambda implementation.
+
+## dashboard.json
+This file contains the JSON representation of an Insights dashboard. Please refer to the New Relic Dashboard API (see https://rpm.newrelic.com/api/explore/dashboards/create) in order to create this dashboard in your account.
+
 ## Environment Variables
 
 * **msAppCenterOwnerName**: the owner name of the Microsoft App Center account
