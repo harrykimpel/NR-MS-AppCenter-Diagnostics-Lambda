@@ -1,0 +1,239 @@
+{
+  "dashboard": {
+    "id": 1056273,
+    "title": "Microsoft App Center",
+    "description": null,
+    "icon": "bar-chart",
+    "created_at": "2019-12-04T20:10:17Z",
+    "updated_at": "2019-12-04T20:22:04Z",
+    "visibility": "all",
+    "editable": "editable_by_all",
+    "ui_url": "https://insights.newrelic.com/accounts/1811877/dashboards/1056273",
+    "api_url": "https://api.newrelic.com/v2/dashboards/1056273",
+    "owner_email": "harrykimpel@live.com",
+    "metadata": {
+      "version": 1
+    },
+    "widgets": [
+      {
+        "visualization": "facet_pie_chart",
+        "layout": {
+          "width": 1,
+          "height": 1,
+          "row": 1,
+          "column": 1
+        },
+        "widget_id": 13970077,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroups since 1 week ago facet errorGroupId"
+          }
+        ],
+        "presentation": {
+          "title": "Error Groups",
+          "notes": null,
+          "drilldown_dashboard_id": null
+        }
+      },
+      {
+        "visualization": "facet_bar_chart",
+        "layout": {
+          "width": 1,
+          "height": 1,
+          "row": 1,
+          "column": 2
+        },
+        "widget_id": 13970088,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroups since 1 week ago facet appBuild"
+          }
+        ],
+        "presentation": {
+          "title": "App Builds",
+          "notes": null,
+          "drilldown_dashboard_id": 1056273
+        }
+      },
+      {
+        "visualization": "facet_bar_chart",
+        "layout": {
+          "width": 1,
+          "height": 1,
+          "row": 1,
+          "column": 3
+        },
+        "widget_id": 13970092,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroups since 1 week ago facet appVersion"
+          }
+        ],
+        "presentation": {
+          "title": "App Version",
+          "notes": null,
+          "drilldown_dashboard_id": 1056273
+        }
+      },
+      {
+        "visualization": "facet_bar_chart",
+        "layout": {
+          "width": 2,
+          "height": 1,
+          "row": 2,
+          "column": 1
+        },
+        "widget_id": 13970130,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroups since 1 week ago facet exceptionType"
+          }
+        ],
+        "presentation": {
+          "title": "Exception Message",
+          "notes": null,
+          "drilldown_dashboard_id": null
+        }
+      },
+      {
+        "visualization": "facet_bar_chart",
+        "layout": {
+          "width": 1,
+          "height": 1,
+          "row": 2,
+          "column": 3
+        },
+        "widget_id": 13970142,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroups since 1 week ago facet exceptionMethod"
+          }
+        ],
+        "presentation": {
+          "title": "Exception Message",
+          "notes": null,
+          "drilldown_dashboard_id": null
+        }
+      },
+      {
+        "visualization": "faceted_line_chart",
+        "layout": {
+          "width": 2,
+          "height": 1,
+          "row": 3,
+          "column": 1
+        },
+        "widget_id": 13970193,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroups since 1 week ago facet errorGroupId TIMESERIES"
+          }
+        ],
+        "presentation": {
+          "title": "Error Groups over time",
+          "notes": null
+        }
+      },
+      {
+        "visualization": "facet_pie_chart",
+        "layout": {
+          "width": 1,
+          "height": 1,
+          "row": 3,
+          "column": 3
+        },
+        "widget_id": 13970195,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroups since 1 week ago facet state"
+          }
+        ],
+        "presentation": {
+          "title": "State",
+          "notes": null,
+          "drilldown_dashboard_id": null
+        }
+      },
+      {
+        "visualization": "facet_table",
+        "layout": {
+          "width": 2,
+          "height": 1,
+          "row": 4,
+          "column": 1
+        },
+        "widget_id": 13970229,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroupsStacktrace since 1 week ago facet title"
+          }
+        ],
+        "presentation": {
+          "title": "Title",
+          "notes": null,
+          "drilldown_dashboard_id": null
+        }
+      },
+      {
+        "visualization": "facet_table",
+        "layout": {
+          "width": 1,
+          "height": 1,
+          "row": 4,
+          "column": 3
+        },
+        "widget_id": 13970211,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT count(*) from MicrosoftAppCenterErrorGroupsStacktrace since 1 week ago facet reason"
+          }
+        ],
+        "presentation": {
+          "title": "Stacktrace Reason",
+          "notes": null,
+          "drilldown_dashboard_id": null
+        }
+      },
+      {
+        "visualization": "facet_bar_chart",
+        "layout": {
+          "width": 3,
+          "height": 1,
+          "row": 5,
+          "column": 1
+        },
+        "widget_id": 13970260,
+        "account_id": 1811877,
+        "data": [
+          {
+            "nrql": "SELECT latest(sequence) FROM MicrosoftAppCenterErrorGroupsStacktraceExceptions FACET className SINCE 1 week AGO"
+          }
+        ],
+        "presentation": {
+          "title": "Stacktrace",
+          "notes": null,
+          "drilldown_dashboard_id": null
+        }
+      }
+    ],
+    "filter": {
+      "event_types": [
+        "MicrosoftAppCenterErrorGroups"
+      ],
+      "attributes": [
+        "errorGroupId",
+        "appBuild",
+        "appVersion"
+      ]
+    }
+  }
+}
